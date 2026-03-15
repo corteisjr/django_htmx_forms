@@ -1,3 +1,7 @@
+[![PyPI version](https://img.shields.io/pypi/v/django-htmx-form-mixin)](https://pypi.org/project/django-htmx-form-mixin/)
+[![Tests](https://github.com/corteisjr/django_htmx_forms/actions/workflows/test.yml/badge.svg)](https://github.com/corteisjr/django_htmx_forms/actions)
+[![Python versions](https://img.shields.io/pypi/pyversions/django-htmx-form-mixin)](https://pypi.org/project/django-htmx-form-mixin/)
+
 # django-htmx-forms
 
 A clean, zero-boilerplate mixin to seamlessly integrate Django Forms with HTMX. 
