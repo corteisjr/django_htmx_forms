@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from pathlib import PurePosixPath
-from typing import Any
+from typing import Any, TYPE_CHECKING
 
 from django.http import HttpResponse, HttpRequest
 from django.template.response import TemplateResponse
@@ -23,8 +23,9 @@ class HtmxFormMixin:
     htmx_redirect: bool = False
     request: HttpRequest
 
-    def get_context_data(self, **kwargs: Any) -> dict[str, Any]: ...
-    def get_success_url(self) -> str: ...
+    if TYPE_CHECKING:
+        def get_context_data(self, **kwargs: Any) -> dict[str, Any]: ...
+        def get_success_url(self) -> str: ...
 
     def is_htmx(self) -> bool:
         request = self.request
